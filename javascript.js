@@ -40,7 +40,6 @@ function transferText () {
     transferDiv = document.createElement('div');
     transferDiv.classList.add('boxes');
     doneText.appendChild(transferDiv);
-    console.log('works')
 
     let value = newDiv[counter] .innerText;
     transferDiv.innerText = value;
@@ -73,7 +72,6 @@ function deleteTasks () {
 
 // Check for button change 
 button.addEventListener("click" , (e) => {
-    console.log('works');
     if (toggle === false) {
         circle.style.transform =  "translateX(33px)";
         document.documentElement.style.setProperty('--linear-color1', 'rgb(239, 243, 231)');
