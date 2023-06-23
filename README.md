@@ -2,4 +2,4 @@
  
 # A simple to-do from basic html, css and javascript. (Made from scratch)
 
-# Live at : (https://davidmagar23.github.io/To-do/https://davidmagar23.github.io/To-do/)
+# Live at : https://davidmagar23.github.io/To-do/
