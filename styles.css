@@ -128,6 +128,10 @@ hr {
 }
 
 @media only screen and (max-width: 800px) {
+    body {
+        font-size: 12px;    
+    }
+
     .container {
         box-shadow: 8px 8px var(--shadow-color1);
         border-radius: 8px;
