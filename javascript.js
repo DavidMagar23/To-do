@@ -3,6 +3,7 @@ let input1 = document.getElementById('input1'),
     enterText = document.getElementById('enterText'),
     checker = document.getElementById('checker'),
     checker2 = document.getElementById('checker2'),
+    eachChecker = document.getElementById('eachChecker'),
     textContainer = document.getElementById('text-container'),
     doneText = document.getElementById('done-text'),
     button = document.getElementById('theme'),
@@ -56,6 +57,13 @@ checker.addEventListener("change", (e) => {
     }
     
     checker.checked = false;
+}
+)
+
+// Check for eachChecker change 
+eachChecker.addEventListener("change", (e) => {
+    transferText();
+    eachChecker.checked = false;
 }
 )
 
