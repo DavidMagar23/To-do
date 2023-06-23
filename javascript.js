@@ -38,11 +38,16 @@ input1.addEventListener("keyup", (e) => {
 
 // Transfer text from do to done
 function transferText () {
+    if (newDiv[counter].innerText === undefined) {
+        return;
+    }
+
+
     transferDiv = document.createElement('div');
     transferDiv.classList.add('boxes');
     doneText.appendChild(transferDiv);
 
-    let value = newDiv[counter] .innerText;
+    let value = newDiv[counter].innerText;
     transferDiv.innerText = value;
     newDiv[counter] .innerText = '';
     newDiv[counter] .remove();
@@ -62,8 +67,8 @@ checker.addEventListener("change", (e) => {
 
 // Check for eachChecker change 
 eachChecker.addEventListener("change", (e) => {
-    transferText();
     eachChecker.checked = false;
+    transferText(); 
 }
 )
 
