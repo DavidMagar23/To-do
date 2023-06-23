@@ -4,6 +4,7 @@ let input1 = document.getElementById('input1'),
     textContainer = document.getElementById('text-container'),
     doneText = document.getElementById('done-text'),
     newDiv = [],
+    transferDiv,
     counter = 0;
 
 function enteredText (value) {
@@ -44,6 +45,7 @@ checker.addEventListener("change", (e) => {
     for ( let i = 0; i < loopNumber; i++) {
         transferText();
     }
+    
     checker.checked = false;
 }
 )
