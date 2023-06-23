@@ -115,6 +115,10 @@ body {
     margin: 0 80px 0 0;
 }
 
+.check2 {
+    margin-right: 20px;
+}
+
 #done-text {
     text-decoration: line-through;
 }
@@ -139,5 +143,15 @@ hr {
     .container {
         box-shadow: 8px 8px var(--shadow-color1);
         border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .check {
+        margin: 0 40px 0 0;
+    }
+    
+    .check2 {
+        margin-right: 10px;
     }
 }
