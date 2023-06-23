@@ -1,3 +1,4 @@
+// Initialize variables and target elements //
 let input1 = document.getElementById('input1'),
     enterText = document.getElementById('enterText'),
     checker = document.getElementById('checker'),
@@ -7,6 +8,7 @@ let input1 = document.getElementById('input1'),
     transferDiv,
     counter = 0;
 
+// Move entered text
 function enteredText (value) {
     newDiv[counter] = document.createElement('div');
     newDiv[counter] .classList.add('boxes');
@@ -14,6 +16,7 @@ function enteredText (value) {
     newDiv[counter] .innerText = value;
 }
 
+// Check for pressed key
 input1.addEventListener("keyup", (e) => {
     let keyPressed = e.key;
     if (input1.value == '') {
@@ -27,6 +30,8 @@ input1.addEventListener("keyup", (e) => {
      }
 });
 
+
+// Transfer text from do to done
 function transferText () {
     transferDiv = document.createElement('div');
     transferDiv.classList.add('boxes');
@@ -40,6 +45,7 @@ function transferText () {
     counter--;
 }
 
+// Check for checkbox change
 checker.addEventListener("change", (e) => {
     let loopNumber = counter;
     for ( let i = 0; i < loopNumber; i++) {
